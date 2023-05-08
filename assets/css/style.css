@@ -4,21 +4,107 @@
     box-sizing: border-box;
 }
 
+html {
+    
+}
+
+main {
+    
+    width: 35vw;
+    margin: 100px auto;
+    border: 2px solid black;
+    border-radius: 25px;
+    box-shadow:  0px 0px 40px #292929;
+    background-color: lightgray;
+}
+
 h1 {
     text-align: center;
     padding: 50px 0;
 }
 
 form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
+    width: 25vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px;
 }
 
 table {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
+    
+    padding-bottom: 50px;
 }
+
+td{
+    height: 3vh;
+    width: 10vw;
+    border: 1px solid black;
+    text-align: center;
+}
+
+label {
+    font-weight: 600;
+}
+
+.sex {
+    
+}
+
+
+select {
+    width: 25vw;
+    margin-bottom: 25px;
+}
+
+p {
+    border-top: 1px solid;
+    text-align: center;
+    font-size: 0.7rem;
+    font-weight: 600;
+    width: 25vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bodytype {
+    padding-bottom: 50px;
+}
+.big, .old, .heavy{
+    width: 15vw;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
+}
+
+.heavy{
+    padding-bottom: 50px;
+}
+ .bodytype {
+     text-align: center;
+}
+.bodytype input{
+    margin-left: 25px;
+}
+
+.btn{
+    width: 75px;
+    height: 30px;
+    background-color: rgb(232, 230, 230);
+    border-radius: 10px;
+}
+.btn:hover{
+    box-shadow:  0px 0px 70px #0d0d0d;
+    background-color: #0d0d0d;
+    color: white;
+    transition: all 0.5s ease-in-out;
+
+}
+    
+    
+    

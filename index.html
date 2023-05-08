@@ -11,29 +11,39 @@
     <main>
         <h1>Kalorien-Rechner</h1>
         <form onsubmit="berechnen(); return false">
-            <label for="Größe">Körpergröße</label>
-            <input placeholder="in cm" type="text" class="height">
-            <label for="Alter">Alter</label>
-            <input type="text" class="age" >
-            <label for="Gewicht">Gewicht</label>
-            <input placeholder="in kg" type="text" class="weight">
-            <label for="Körperbau">Körperbau</label>
-            <input type="radio" name="geschlecht" value="female" checked>
-            <label for="female">Weiblich</label>
-            <input type="radio" name="geschlecht" value="male">
-            <label for="male">Männlich</label>
-            <label for="activity">Arbeits- und Freizeitaktivität</label>
-            <select name="auswahl" id="dropdown">
-                <option value="0.95">Schlafen</option>
-                <option value="1.2">Nur Sitzen oder Liegen</option>
-                <option value="1.5">Ausschließlich sitzende Tätigkeit mit wenig oder keiner körperlichen Aktivität in der Freizeit, z.B. Büroarbeit
-                </option>
-                <option value="1.7">Sitzende Tätigkeit mit zeitweilig gehender oder stehender Tätigkeit, z.B. Studierende, Fließbandarbeiter, Laboranten, Kraftfahrer</option>
-                <option value="1.9">Überwiegend gehende oder stehende Tätigkeit, z.B. Verkäufer, Kellner, Handwerker, Mechaniker, Hausfrauen</option>
-                <option value="2.2">Körperlich anstrengende berufliche Arbeit
-                </option>
-            </select>
-            <input type="submit" value="Submit">
+            <div class="big">
+                <label for="Größe">Körpergröße</label>
+                <input placeholder="in cm" type="text" class="height">
+            </div>
+            <div class="old">
+                <label for="Alter">Alter</label>
+                <input type="text" class="age" >
+            </div>   
+            <div class="heavy">
+                <label for="Gewicht">Gewicht</label>
+                <input placeholder="in kg" type="text" class="weight">
+            </div>
+            <div class="bodytype">
+                <label for="Körperbau">Körperbau</label>
+                <input class="sex" type="radio" name="geschlecht" value="female" checked>
+                <label for="female">Weiblich</label>
+                <input class="sex" type="radio" name="geschlecht" value="male">
+                <label for="male">Männlich</label>
+            </div>
+            <div >   
+                <label for="activity">Arbeits- und Freizeitaktivität</label>
+                <select name="auswahl" id="dropdown">
+                    <option value="0.95">Schlafen</option>
+                    <option value="1.2">Nur Sitzen oder Liegen</option>
+                    <option value="1.5">Ausschließlich sitzende Tätigkeit mit wenig oder keiner körperlichen Aktivität in der Freizeit, z.B. Büroarbeit
+                    </option>
+                    <option value="1.7">Sitzende Tätigkeit mit zeitweilig gehender oder stehender Tätigkeit, z.B. Studierende, Fließbandarbeiter, Laboranten, Kraftfahrer</option>
+                    <option value="1.9">Überwiegend gehende oder stehende Tätigkeit, z.B. Verkäufer, Kellner, Handwerker, Mechaniker, Hausfrauen</option>
+                    <option value="2.2">Körperlich anstrengende berufliche Arbeit
+                    </option>
+                </select>
+            </div>
+            <input class="btn" type="submit" value="Submit">
         </form>
         <div>
             <table>
@@ -54,7 +64,7 @@
                 </tr>
             </table>
         </div>
-        <p>Das Ergebnis des Rechners sollten Sie als Orientierungswert ansehen, da es verschiedene Fehlermöglichkeiten gibt wie abweichender Grundumsatz, falsche Zeiteinschätzung etc.</p>
+        <p>*Das Ergebnis des Rechners sollten Sie als Orientierungswert ansehen, da es verschiedene Fehlermöglichkeiten gibt wie abweichender Grundumsatz, falsche Zeiteinschätzung etc.*</p>
     </main>
     <script src="./assets/js/main.js"></script>
 </body>
